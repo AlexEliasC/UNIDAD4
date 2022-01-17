@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>red-social</title>
+    <!-- Latest compiled and minified CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <!-- ESTA ES LA PANTALLA DE INICIO -->
+    <div class="container-fluid first-screen">
+      <!-- PRIMERA COLUMNA -->
+      <div class="row">
+        <div class="hidden-xs hidden-sm col-md-5 col-lg-5 firstCol">
+          <h4><strong>Wild travel Chile, la red social de los viajeros outdoors.</strong></h4>
+          <p class="txtcol">Descubre, explora y comparte las mejores experiencias a nivel nacional.</p><br>
+          <h4><strong>¿Cómo funciona?</strong></h4>
+          <div class="row">
+            <div class="col-md-1 col-lg-1">
+              <i class="fa fa-compass" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-11 col-lg-11">
+              <h4>Comparte tus experiencias</h4>
+              <p class="txtcol">Usa Wild Travel Chile cada vez que recorras paisajes de Chile y muestra a otros usuarios lo que haces.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-1 col-lg-1">
+              <i class="fa fa-map-o" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-11 col-lg-11">
+              <h4>Explora nuevas rutas</h4>
+              <p class="txtcol">Encuentra lugares únicos desde el norte al sur de Chile.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-1 col-lg-1">
+              <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-11 col-lg-11">
+              <h4>Sigue a otros viajeros</h4>
+              <p class="txtcol">Busca a tus amigos y descubre a otros entusiastas del outdoor.</p>
+            </div>
+          </div>
+        </div><!-- fin primera columna -->
+        <!-- SEGUNDA COLUMNA -->
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 secondCol">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 logoCol">
+              <img src="assets/img/logo.png" alt="logo">
+            </div>
+          </div>
+          <!--FORMULARIO DE AUTENTICACIÓN-->
+          <form id="form-autenticacion">
+            <!-- INPUT EMAIL -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+                <input id="email" class="form-control" type="text" name="email" placeholder="Email" value="">
+                </div>
+            </div>
+            <!-- INPUT PASSWORD -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+                <input id="password" class="form-control" type="password" name="password" placeholder="Contraseña" value="">
+              </div>
+            </div>
+            <!-- BOTON 2 -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+                <input id="btnSingup" class="btn btn-init btn2" type="submit" value="Iniciar sesión">
+              </div>
+            </div>
+            <!-- PREGUNTA -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+                <p class="before-after-whiteLines text-center">¿No tienes cuenta?</p>
+              </div>
+            </div>
+            <!-- BOTON 1 -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+                 <input id="btnLogin" class="btn btn-init btn1" type="button" value="Regístrate" data-toggle="modal" data-target="#myModal">
+                  <!-- MODAL -->
+                  <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title">Regístrate aquí</h4>
+                          <img class="center-block" src="assets/img/logo-verde.png" alt="logo">
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="emailRegistro" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                              <input type="password" class="form-control" id="passwordRegistro" placeholder="Password">
+                            </div>
+                            <span id="fileSelector">
+                              <label class="btnProfile btn" for="upload-profile">
+                                <input id="upload-profile" type="file" accept="image/x-png, image/gif, image/jpeg">
+                                <i class="fa fa-upload" aria-hidden="true"></i>Sube tu foto de perfil
+                              </label>
+                            </span>
+                            <div>
+                              <textarea id="description" placeholder="Cuéntanos algo sobre ti..."></textarea>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="reset" class="btn" id="botonEnviar" onclick="registrar()">Enviar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </form>
+        </div> <!--segunda columna -->
+      </div><!--row general-->
+    </div>
+    <!--Aquí va el perfil del usuario -->
+		<div class="container-fluid userProfileMovil hidden">
+      <div class="row">
+        <div class="col-xs-12 col-md-12 perfirMovil">
+          <h3 class="perfilMovilTitle text-center">Mi Perfil</h3>
+        </div>
+        <div class="col-xs-3 col-md-4">
+          <a id="homeLink" href="#"><span><i class="fa fa-spinner" aria-hidden="true"></i></span></a>
+          <div class="col-xs-12" id="profile"></div>
+        </div>
+      </div>
+    </div><!--container-->
+    <!--Esta es la pantalla de las publicaciones (newsfeed)-->
+    <div class="container-fluid newsfeed hidden">
+      <header>
+        <div class="row header-row">
+          <div class="col-xs-3 col-md-4">
+            <a id="homeLink" href="#"><span><i class="fa fa-spinner" aria-hidden="true"></i></span></a>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <img class="center-block" id="logo-verde" src="assets/img/logo-verde.png" alt="">
+          </div>
+          <div class="col-xs-3 col-xs-offset-0 col-md-offset-3 col-md-1">
+            <a id="userLink" href="#"><span><i class="fa fa-user-o" aria-hidden="true"></i></span></a>
+          </div>
+        </div>
+      </header>
+        <!-- buscador por region -->
+      <section>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <select class="form-control" id="region-menu">
+              <option value="Seleccion">¿Qué región estás buscando?</option>
+              <option value="Arica">XV - Arica y Parinacota</option>
+              <option value="Tarapaca">I - Tarapacá</option>
+              <option value="Antofagasta">II - Antofagasta</option>
+              <option value="Atacama">III - Atacama</option>
+              <option value="Coquimbo">IV - Coquimbo</option>
+              <option value="Valparaíso">V - Valparaíso</option>
+              <option value="Ohhigins">VI - O'Higgins</option>
+              <option value="Maule">VII - Maule</option>
+              <option value="Biobio">VIII - Biobío</option>
+              <option value="Araucania">IX - Araucanía</option>
+              <option value="LosRios">XIV - Los Ríos</option>
+              <option value="LosLagos">X - Los Lagos</option>
+              <option value="Aysen">XI - Aysén</option>
+              <option value="Magallanes">XII - Magallanes</option>
+              <option value="Metropolitana">RM - Metropolitana de Santiago</option>
+             </select>
+           </div>
+         </div>
+          <!-- mostrar publicaciones subidas a firebase -->
+        <div class="row news">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <div id="divImg"></div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="row footer-row footer navbar-fixed-bottom">
+          <div class="col-xs-2 col-xs-offset-1 col-md-2 col-md-offset-3">
+            <a href="#modal-post" class="btn" data-toggle="modal"><span><i class="fa fa-camera" aria-hidden="true"></i></span></a>
+          </div>
+          <div class="col-xs-2 col-xs-offset-5 col-md-2 col-md-offset-3">
+            <a id="followLink" href="#"><span><i class="fa fa-users" aria-hidden="true"></i></span></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- modal para ingresar la experiencia -->
+    <div class="modal fade" id="modal-post" tabindex="-1" role="dialog" aria-labelledby="modal-postLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <!--selector de regiones-->
+            <div class="row">
+             <div class="col-xs-12">
+               <select class="form-control" id="region-menu-modal">
+                 <option value="Seleccion">¿Qué región visitaste?</option>
+                 <option value="Arica">XV - Arica y Parinacota</option>
+                 <option value="Tarapaca">I - Tarapacá</option>
+                 <option value="Antofagasta">II - Antofagasta</option>
+                 <option value="Atacama">III - Atacama</option>
+                 <option value="Coquimbo">IV - Coquimbo</option>
+                 <option value="Valparaíso">V - Valparaíso</option>
+                 <option value="Ohhigins">VI - O'Higgins</option>
+                 <option value="Maule">VII - Maule</option>
+                 <option value="Biobio">VIII - Biobío</option>
+                 <option value="Araucania">IX - Araucanía</option>
+                 <option value="LosRios">XIV - Los Ríos</option>
+                 <option value="LosLagos">X - Los Lagos</option>
+                 <option value="Aysen">XI - Aysén</option>
+                 <option value="Magallanes">XII - Magallanes</option>
+                 <option value="Metropolitana">RM - Metropolitana de Santiago</option>
+               </select>
+             </div>
+           </div>
+            <!--textarea para escribir la publicación-->
+            <div class="row">
+              <div class="col-xs-6 col-md-8">
+                <textarea class="txt" id="comment" placeholder="Cuéntanos tu experiencia..."></textarea>
+              </div>
+            <!--región de muestra de la imagen-->
+              <div class="col-xs-6 col-md-4 text-center">
+                <span id="fileSelector">
+                  <label class="btnUpload btn" for="upload-file-selector">
+                    <input id="upload-file-selector" type="file" accept="image/x-png, image/gif, image/jpeg">
+                    <i class="fa fa-upload" aria-hidden="true"></i>Subir Imagen
+                  </label>
+                </span>
+              </div>
+            </div>
+            <!-- para seleccionar la imagen-->
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <img id="imgLoad" src="img/no-image.png" alt="">
+              </div>
+            </div>
+          <!-- para cargar la imagen a firebase-->
+            <div class="row">
+              <div class="col-xs-6 col-xs-offset-7 col-md-3 col-md-offset-9">
+                <button class="btnData btn" type="button" name="button">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--sección de los usuarios a los que sigo-->
+    <div class="container-fluid follow hidden">
+      <div class="row">
+        <div class="col-xs-6 col-md-3 col-md-offset-3">
+          <h3 class="text-center followTitle">Siguiendo</h3>
+        </div>
+        <div class="col-xs-6 col-md-3 ">
+          <a id="homeLinkFollow" href="#"><span><i class="fa fa-spinner" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="user-follow">
+          <div class="row">
+            <div class="col-xs-12">
+              <div id="div-follow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--autenticación firebase-->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://use.fontawesome.com/e93f958285.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="assets/js/app.js"></script>
+  </body>
+</html>
